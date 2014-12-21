@@ -11,11 +11,11 @@ function showGrowth() {
 	var input = document.getElementById('input');
 	var splitInput = input.value.split('\n');
 	//Clear text in output area
-	output.innerHTML = ''
+	output.innerHTML = '';
 	//Place heights passed from grow() into output box
 	for (i=0; i < grow().length; i++){
-		output.innerHTML += 'N value of ' + splitInput[i+1] + ' gives ' + grow()[i] + '<br />';
-	}	
+		output.innerHTML += '<br />N value of ' + splitInput[i+1] + ' gives ' + grow()[i];
+	}
 }
 
 var seasonChecker = function(height, season){
@@ -96,3 +96,8 @@ function grow() {
 	//Return all of the heights for the given N's
 	return finalHeights;
 }
+
+//Initializes popover in modal
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})

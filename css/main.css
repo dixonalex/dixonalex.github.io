@@ -31,11 +31,7 @@ body {
 }
 
 #outputBox p {
-	margin-top: 5%;
-}
-
-.modal-body {
-	height:350px;
+	margin-top :3%;
 }
 
 textarea {

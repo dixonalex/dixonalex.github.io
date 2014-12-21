@@ -44,27 +44,24 @@
 				    			<button id="constraintPop" type="button" class="btn btn-link" data-toggle="popover" title="T = number of N lines" data-content="1 <= T <= 10;  0 <= N <= 60">(Constraints)</button></h4>
 				    	</div>
 				    	<div class="modal-body">
-				      		<div class="col-md-4 col-md-offset-2" id="inputBox">
-							<textarea type="text" class="form-control" id="input" rows="11" cols="50" placeholder="Enter your T value in the first row, and then your N values in subsequent rows."></textarea>
-							<br />
-							<button id="growButton" class="btn btn-primary" onclick="showGrowth">Submit</button>
-						</div>
-						<div class="col-md-4 col-md-offset-1" id="outputBox">
-						</div>
+					    	<div class="row">
+					      		<div class="col-md-4 col-md-offset-2" id="inputBox">
+									<textarea type="text" class="form-control" id="input" rows="11" cols="50" placeholder="Enter your T value in the first row, and then your N values in subsequent rows."></textarea>
+									<br />
+									<button id="growButton" class="btn btn-primary" onclick="showGrowth">Submit</button>
+								</div>
+
+								<div class="col-md-4 col-md-offset-1" id="outputBox">
+								</div>
+							</div>
 				      	</div>
 				    </div>
 				  </div>
 				</div>
-
 			</div>
 		</div>
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="js/utopian.js"></script>
-		<script>
-			$(function () {
-			  $('[data-toggle="popover"]').popover()
-			})
-		</script>
 	</body>
 </html>
