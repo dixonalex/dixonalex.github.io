@@ -37,3 +37,7 @@ body {
 .modal-body {
 	height:350px;
 }
+
+textarea {
+   resize: none;
+}
