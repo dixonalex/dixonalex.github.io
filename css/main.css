@@ -41,3 +41,7 @@ body {
 textarea {
    resize: none;
 }
+
+#constraintPop {
+	margin-left: -1.5%;
+}

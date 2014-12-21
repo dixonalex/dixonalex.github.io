@@ -40,7 +40,8 @@
 				    			<span aria-hidden="true">x</span>
 				    			<span class="sr-only">Close</span>
 				    		</button>
-				    		<h4 class="modal-title">Solution</h4>
+				    		<h4 class="modal-title">Solution -
+				    			<button id="constraintPop" type="button" class="btn btn-link" data-toggle="popover" title="T = number of N lines" data-content="1 <= T <= 10;  0 <= N <= 60">Constraints</button></h4>
 				    	</div>
 				    	<div class="modal-body">
 				      		<div class="col-md-4 col-md-offset-2" id="inputBox">
@@ -60,5 +61,10 @@
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="js/utopian.js"></script>
+		<script>
+			$(function () {
+			  $('[data-toggle="popover"]').popover()
+			})
+		</script>
 	</body>
 </html>
